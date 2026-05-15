@@ -100,8 +100,6 @@ spotify_test <- testing(spotify_split)
 
 ## Exploratory Data Analysis
 
-This section should include the code, figures, and accompanying text for the exploratory data analysis that is relevant to your objective. You should be able to just clean up the EDA section from Project 2.
-
 ### Track Popularity
 
 Track popularity is the main response variable in this project making it important to first understand how popularity score are distributed across songs in the training set. By examining the distribution, it helps determine whether most songs are similarly popular or if a small number of songs are scaled on a relatively higher popularity score.
@@ -125,9 +123,11 @@ The histogram supports these findings by showing that popularity is spread acros
 To investigate whether this distinction matters for the analysis, popularity was recoded into two groups: songs with a score of zero and songs with a non-zero score.
 
 ```{r}
-#| label: popularity groups
+#| label: zero popularity groups
+
+# create a new variable that separates songs into zero popularity and non-zero popularity groups
 spotify_train <- spotify_train |>
-  mutate(popularity_group = ifelse(track_popularity == 0, 
+  mutate(popularity_group = ifelse(track_popularity == 0, # popularity_group = when track_popularity is 0 
                                    "Zero Popularity", 
                                    "Non-Zero Popularity"))
 
@@ -231,17 +231,23 @@ To find a balance, a grid of cost complexity values ranging from very small to l
 
 ```{r}
 #| label: classification tree
+
+# define a classification tree model
+# cost_complexity is tuned later using cross validation
 spotifyC_model <- decision_tree( mode = "classification",
                               engine = "rpart",
                               cost_complexity = tune() 
                               )
 
+# create a recipe using Spotify audio features
 spotifyC_recipe <- recipe(playlist_genre ~ danceability + energy + loudness +
                             speechiness + acousticness +
                             instrumentalness + liveness +
                             valence + tempo,
                           data = spotify_train
                           )
+
+# create workflow using the model and recipe 
 spotifyC_wflow <- workflow() |>
   add_model(spotifyC_model) |>
   add_recipe(spotifyC_recipe)
@@ -249,10 +255,14 @@ spotifyC_wflow <- workflow() |>
 
 ```{r}
 #| label: tune classification tree model
-spotify_kfold <- vfold_cv(spotify_train,
+
+# 5 fold cross validation on the training set
+spotify_kfold <- vfold_cv(spotify_train, 
                           v = 5,
                           repeats = 3)
 
+# tune different cost complexity values
+# evaluates each model using log loss and accuracy
 spotifyC_tune <- tune_grid(spotifyC_wflow,
                         resamples = spotify_kfold,
                         grid = grid_regular(cost_complexity(range = c(-4,0)),
@@ -263,14 +273,16 @@ spotifyC_tune <- tune_grid(spotifyC_wflow,
 ```
 
 ```{r}
-#| label: collect and plot metrics
+#| label: plot metrics
 autoplot(spotifyC_tune)
 ```
 
 ```{r}
 #| label: select best tree - mean log loss
+
+# select the simplest classification tree whose
 spotifyC_best <- select_by_one_std_err(spotifyC_tune,
-                                       metric = "mn_log_loss",
+                                       metric = "mn_log_loss", # perform mean log loss 
                                        desc(cost_complexity)
                                        )
 spotifyC_best 
@@ -283,6 +295,8 @@ spotifyC_tune |>
 
 ```{r}
 #| label: finalize and fit tree
+
+# finalize the workflow using the selected cost complexity tuning parameter
 spotifyC_wflow_final <- spotifyC_wflow |>
   finalize_workflow(parameters = spotifyC_best)
 
@@ -292,6 +306,7 @@ spotifyC_fit <- fit(spotifyC_wflow_final,
 ```
 
 ```{r}
+#| label: fit the finalized classification tree model
 spot_kfold <- fit_resamples(
   spotifyC_wflow_final, 
   resamples = spotify_kfold,
