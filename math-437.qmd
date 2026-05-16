@@ -199,8 +199,10 @@ ggplot(data = spotify_train,
                      y = track_popularity)
        ) +
   geom_boxplot() + coord_flip() + 
-  geom_point(mapping = aes(color = playlist_genre),
-             alpha = 0.1
+  geom_jitter(mapping = aes(color = playlist_genre),
+             alpha = 0.1,
+             width = 0, # no horizontal jitter
+             height = 0.25 # vertical jitter roughly half the binwidth
              ) + 
   labs(title = "Popularity by Genre",
        x = "Genre",
