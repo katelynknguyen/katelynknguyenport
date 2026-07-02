@@ -7,7 +7,7 @@ website:
   navbar:
     left:
       - href: Katelyn K Nguyen Portfolio.qmd
-        # text: Home
+        text: Home
         
       - text: Projects
         menu:
