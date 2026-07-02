@@ -8,10 +8,20 @@ website:
     left:
       - href: index.qmd
         # text: Home
-      - href: projects.qmd
-        text: Projects
-      - href: math-437.qmd
-        text: Math 437 Final Project
+        
+      - text: Projects
+        menu:
+          - href: projects:r.qmd
+            text: R
+
+          - href: math-437.qmd
+            text: RStudio
+
+          - href: projects:python.qmd
+            text: Python
+
+          - href: projects:sql.qmd
+            text: SQL
 
 format:
   html:
