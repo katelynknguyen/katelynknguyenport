@@ -13,5 +13,14 @@
   },
   "math-437-project-template.qmd": {
     "math-437-project-template.html": "b5d50a4d"
+  },
+  "projects-r.qmd": {
+    "projects-r.html": "537e6291"
+  },
+  "projects-sql.qmd": {
+    "projects-sql.html": "e98ac133"
+  },
+  "projects-python.qmd": {
+    "projects-python.html": "43044199"
   }
 }

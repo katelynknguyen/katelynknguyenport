@@ -27,7 +27,7 @@ Music streaming has fundamentally changed how songs become popular. On platforms
 #| echo: false
 #| message: false
 
-here::i_am("math-437-project-template.qmd")
+here::i_am("math-437.qmd")
 ```
 
 ## Packages Used In This Analysis
