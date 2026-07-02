@@ -96,14 +96,29 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./index.qmd"> 
 <span class="menu-text"></span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
-<span class="menu-text">Projects</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Projects</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
+        <li>
+    <a class="dropdown-item" href="./projects-r.qmd">
+ <span class="dropdown-text">R</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./math-437.html"> 
-<span class="menu-text">Math 437 Final Project</span></a>
+        <li>
+    <a class="dropdown-item" href="./math-437.qmd">
+ <span class="dropdown-text">RStudio</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./projects-python.qmd">
+ <span class="dropdown-text">Python</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./projects-sql.qmd">
+ <span class="dropdown-text">SQL</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
