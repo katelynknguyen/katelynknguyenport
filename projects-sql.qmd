@@ -1,3 +1,7 @@
 ---
 title: "projects/sql"
 ---
+
+## COVID-19 Mortality Prediction Using Linear Regression
+
+In this project, my partner and I built a predictive linear regression model using global COVID-19 and demographic datasets to forecast COVID-19 deaths two weeks in advance. We performed data cleaning, feature engineering, dataset merging, model evaluation with RMSE, and compared multiple regression models to identify the best-performing predictor combination.
