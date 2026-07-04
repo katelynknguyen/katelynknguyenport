@@ -11,4 +11,4 @@ This project analyzes how Body Mass Index (BMI) influences the risk of anastomot
 
 
 ## There’s an App for That … But is there Profit?
-📔 **Presentation Report** [View PDF](pdfs/M439 Case Study 1.pdf.pdf)
+📔 **Presentation Report** [View PDF](pdfs/M439_Case_Study_1.pdf)
