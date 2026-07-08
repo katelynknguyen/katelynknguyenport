@@ -7,6 +7,7 @@ title: "Projects: R"
 This project analyzes how Body Mass Index (BMI) influences the risk of anastomotic leak following a colectomy using clinical data from 179 patients. I developed and tuned a Random Forest classification model in R to predict postoperative leak risk based on patient demographics, comorbidities, laboratory values, and surgical characteristics. The analysis included model tuning, cross-validation, and visualization of predicted risk curves for two patient case studies, demonstrating how BMI interacts with other clinical factors to affect surgical outcomes. 
 
 📄 **Project Report:** [View PDF](pdfs/439_Midterm2.pdf)
+
 📔 **Presentation Report** [View PDF](pdfs/439-Midterm2.pdf)
 
 

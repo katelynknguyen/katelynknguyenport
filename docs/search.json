@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "projects-python.html",
+    "href": "projects-python.html",
+    "title": "projects/python",
+    "section": "",
+    "text": "In this project, my partner and I built a predictive linear regression model using global COVID-19 and demographic datasets to forecast COVID-19 deaths two weeks in advance. We performed data cleaning, feature engineering, dataset merging, model evaluation with RMSE, and compared multiple regression models to identify the best-performing predictor combination."
+  },
+  {
+    "objectID": "projects-python.html#covid-19-mortality-prediction-using-linear-regression",
+    "href": "projects-python.html#covid-19-mortality-prediction-using-linear-regression",
+    "title": "projects/python",
+    "section": "",
+    "text": "In this project, my partner and I built a predictive linear regression model using global COVID-19 and demographic datasets to forecast COVID-19 deaths two weeks in advance. We performed data cleaning, feature engineering, dataset merging, model evaluation with RMSE, and compared multiple regression models to identify the best-performing predictor combination."
+  },
+  {
     "objectID": "math-437.html",
     "href": "math-437.html",
     "title": "Playlist #437:Songs My Algorithm Thinks You’ll Like",
@@ -84,24 +98,38 @@
     "text": "Education\nCalifornia State University, Fullerton | August 2022 - May 2026"
   },
   {
+    "objectID": "projects-r.html",
+    "href": "projects-r.html",
+    "title": "Projects: R",
+    "section": "",
+    "text": "This project analyzes how Body Mass Index (BMI) influences the risk of anastomotic leak following a colectomy using clinical data from 179 patients. I developed and tuned a Random Forest classification model in R to predict postoperative leak risk based on patient demographics, comorbidities, laboratory values, and surgical characteristics. The analysis included model tuning, cross-validation, and visualization of predicted risk curves for two patient case studies, demonstrating how BMI interacts with other clinical factors to affect surgical outcomes.\n📄 Project Report: View PDF\n📔 Presentation Report View PDF"
+  },
+  {
+    "objectID": "projects-r.html#beyond-the-scale-modeling-anastomotic-leak-as-bmi-increases",
+    "href": "projects-r.html#beyond-the-scale-modeling-anastomotic-leak-as-bmi-increases",
+    "title": "Projects: R",
+    "section": "",
+    "text": "This project analyzes how Body Mass Index (BMI) influences the risk of anastomotic leak following a colectomy using clinical data from 179 patients. I developed and tuned a Random Forest classification model in R to predict postoperative leak risk based on patient demographics, comorbidities, laboratory values, and surgical characteristics. The analysis included model tuning, cross-validation, and visualization of predicted risk curves for two patient case studies, demonstrating how BMI interacts with other clinical factors to affect surgical outcomes.\n📄 Project Report: View PDF\n📔 Presentation Report View PDF"
+  },
+  {
     "objectID": "projects-r.html#theres-an-app-for-that-but-is-there-profit",
     "href": "projects-r.html#theres-an-app-for-that-but-is-there-profit",
     "title": "Projects: R",
     "section": "There’s an App for That … But is there Profit?",
-    "text": "There’s an App for That … But is there Profit?"
+    "text": "There’s an App for That … But is there Profit?\n📔 Presentation Report View PDF"
   },
   {
     "objectID": "projects-sql.html",
     "href": "projects-sql.html",
     "title": "projects/sql",
     "section": "",
-    "text": "In this project, my partner and I built a predictive linear regression model using global COVID-19 and demographic datasets to forecast COVID-19 deaths two weeks in advance. We performed data cleaning, feature engineering, dataset merging, model evaluation with RMSE, and compared multiple regression models to identify the best-performing predictor combination."
+    "text": "For this project, my partner and I developed a full-stack university database management system using MySQL, PHP, HTML, and CSS. We designed a relational database schema with normalized tables and implemented SQL queries to manage students, professors, courses, sections, and enrollments. We finished it be building an interactive web application that allows users to view professor teaching schedules, analyze grade distributions, search course sections, and retrieve student academic records through dynamic PHP pages connected to a MySQL database.\n📄 Project Report: View PDF"
   },
   {
-    "objectID": "projects-sql.html#covid-19-mortality-prediction-using-linear-regression",
-    "href": "projects-sql.html#covid-19-mortality-prediction-using-linear-regression",
+    "objectID": "projects-sql.html#university-database-management-system",
+    "href": "projects-sql.html#university-database-management-system",
     "title": "projects/sql",
     "section": "",
-    "text": "In this project, my partner and I built a predictive linear regression model using global COVID-19 and demographic datasets to forecast COVID-19 deaths two weeks in advance. We performed data cleaning, feature engineering, dataset merging, model evaluation with RMSE, and compared multiple regression models to identify the best-performing predictor combination."
+    "text": "For this project, my partner and I developed a full-stack university database management system using MySQL, PHP, HTML, and CSS. We designed a relational database schema with normalized tables and implemented SQL queries to manage students, professors, courses, sections, and enrollments. We finished it be building an interactive web application that allows users to view professor teaching schedules, analyze grade distributions, search course sections, and retrieve student academic records through dynamic PHP pages connected to a MySQL database.\n📄 Project Report: View PDF"
   }
 ]
