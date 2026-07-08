@@ -1,5 +1,5 @@
 ---
-title: "Projects: R"
+title: "R"
 ---
 
 ## Beyond the Scale: Modeling Anastomotic Leak as BMI Increases
@@ -8,8 +8,11 @@ This project analyzes how Body Mass Index (BMI) influences the risk of anastomot
 
 📄 **Project Report:** [View PDF](pdfs/439_Midterm2.pdf)
 
-📔 **Presentation Report** [View PDF](pdfs/439-Midterm2.pdf)
+📔 **Presentation Report** [View PDF](pdfs/Midterm2.pdf)
 
 
-## There’s an App for That … But is there Profit?
-📔 **Presentation Report** [View PDF](pdfs/M439_Case_Study_1.pdf)
+## Shocking Results: When Data Trembles
+
+📄 **Project Report:** [View PDF](pdfs/439_midterm.pdf)
+
+📔 **Presentation Report** [View PDF](pdfs/Midterm1-Main vs After Shocks.pdf)

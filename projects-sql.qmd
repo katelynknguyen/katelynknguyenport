@@ -1,5 +1,5 @@
 ---
-title: "projects/sql"
+title: "SQL"
 ---
 
 ## University Database Management System
