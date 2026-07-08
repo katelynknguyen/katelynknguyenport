@@ -12,6 +12,7 @@ This project analyzes how Body Mass Index (BMI) influences the risk of anastomot
 
 
 ## Shocking Results: When Data Trembles
+Analyzed 12 years of seismic data from the Atacama Fault Zone to model the relationship between earthquake mainshock and aftershock magnitudes. Built a log-linear regression model (ln(aftershock) ~ mainshock) after identifying that raw magnitude data violated linearity and constant-variance assumptions. Used bootstrap resampling (10,000 iterations) to generate confidence and prediction intervals for expected aftershock magnitude at a range of mainshock levels, and estimated the probability of an aftershock exceeding the "dangerous" magnitude 6.0 threshold.
 
 📄 **Project Report:** [View PDF](pdfs/439_midterm.pdf)
 
