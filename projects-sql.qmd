@@ -2,6 +2,8 @@
 title: "projects/sql"
 ---
 
-## COVID-19 Mortality Prediction Using Linear Regression
+## University Database Management System
 
-In this project, my partner and I built a predictive linear regression model using global COVID-19 and demographic datasets to forecast COVID-19 deaths two weeks in advance. We performed data cleaning, feature engineering, dataset merging, model evaluation with RMSE, and compared multiple regression models to identify the best-performing predictor combination.
+For this project, my partner and I developed a full-stack university database management system using MySQL, PHP, HTML, and CSS. We designed a relational database schema with normalized tables and implemented SQL queries to manage students, professors, courses, sections, and enrollments. We finished it be building an interactive web application that allows users to view professor teaching schedules, analyze grade distributions, search course sections, and retrieve student academic records through dynamic PHP pages connected to a MySQL database.
+
+📄 **Project Report:** [View PDF](pdfs/CPSC332_Final_Project.pdf)
